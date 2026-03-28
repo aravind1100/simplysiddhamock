@@ -26,8 +26,8 @@ const App = () => {
     <>
       <div className="min-h-screen w-full bg-linear-to-br from-green-50 via-white to-emerald-50 selection:bg-green-200">
       <Navbar />
-       <div className="pt-45">
-    <Hero />
+       <div className="pt-45 max-w-7xl mx-auto">
+       <Hero />
         </div>
         <VideoSection />
         <Cta />

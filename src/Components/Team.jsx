@@ -43,10 +43,13 @@ export default function Team() {
 
         {/* Header */}
         <div className="text-center mb-10">
-          <span className="text-xs font-semibold tracking-widest uppercase text-[#1f472f] bg-[#1f472f]/10 px-4 py-1.5 rounded-full">
+          <div className="text-xs font-semibold tracking-widest uppercase text-[#1f472f] bg-[#1f472f]/10 px-6 py-2 rounded-full mb-4">
             Our Team
-          </span>
-          <StatsSection />
+          </div>
+         
+            <StatsSection />
+          
+          
           <h2 className="text-3xl font-semibold text-[#1f472f] mt-4 heading-font">
             Meet the Experts
           </h2>
