@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+/* Scroll animation utility: initial hidden state and fade-up transition */
+.scroll-animate,
+.scroll-animate-init {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Swiper navigation arrows */
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-button-next::after,
+.swiper-button-prev::after,
+.swiper-button-next::before,
+.swiper-button-prev::before {
+  color: #9ca3af !important; /* tailwind gray-400 */
+  fill: #9ca3af !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover,
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::before,
+.swiper-button-prev:hover::before {
+  color: #6b7280 !important; /* tailwind gray-500 */
+  fill: #6b7280 !important;
+}
+
+.heading-font {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+body {
+  
+  background: linear-gradient(
+    135deg,
+    oklch(0.98 0.005 85) 0%,
+    oklch(0.96 0.008 130) 50%,
+    oklch(0.97 0.006 85) 100%
+  );
+  min-height: 100vh;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 0.5px #000000;
+  color: white;
+}
+
+.clip-path-triangle {
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
